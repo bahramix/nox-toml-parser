@@ -10,6 +10,10 @@ namespace nox::toml{
         string,
         right_bracket,
         left_bracket,
+        right_brace,
+        left_brace,
+        comma,
+        dot,
         next_line,
         end_of_file
     };

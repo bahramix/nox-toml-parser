@@ -66,6 +66,14 @@ namespace nox::toml{
                 return {token_type::right_bracket};
             case ']':
                 return {token_type::left_bracket};
+            case '{':
+                return {token_type::right_brace};
+            case '}':
+                return {token_type::left_brace};
+            case ',':
+                return {token_type::comma};
+            case '.':
+                return {token_type::dot};
             case '\n':
                 return {token_type::next_line};
             case '"':
@@ -134,6 +142,18 @@ namespace nox::toml{
             }
             else if(tk.type == token_type::left_bracket){
                 std::cout << "[left bracket]\n";
+            }
+            else if(tk.type == token_type::right_brace){
+                std::cout << "[right brace]\n";
+            }
+            else if(tk.type == token_type::left_brace){
+                std::cout << "[left brace]\n";
+            }
+            else if(tk.type == token_type::comma){
+                std::cout << "[comma]\n";
+            }
+            else if(tk.type == token_type::dot){
+                std::cout << "[dot]\n";
             }
             else if(tk.type == token_type::next_line){
                 std::cout << "[next line]\n";

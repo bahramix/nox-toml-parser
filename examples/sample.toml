@@ -1,4 +1,6 @@
 [files]
+1.5.3 = 56.9
+file = [1, 8, 9]
 exec_name = "program"
 build_dir = "./build"
 
