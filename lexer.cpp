@@ -44,6 +44,12 @@ namespace nox::toml{
         while(peek() == ' ' || peek() == '\t'){
             advance();
         }
+
+        if(peek() == '#'){
+            while(!is_at_end() && peek() != '\n'){
+                advance();
+            }
+        }
     }
 
     bool lexer::is_at_end(){

@@ -1,8 +1,9 @@
-[files]
+[files] #this is a comment and should be ignored
+# this is also a comment aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 1.5.3 = 56.9
 file = [1, 8, 9]
 exec_name = "program"
-build_dir = "./build"
+#build_dir = "./build"
 
 [compiler]
 name = "gcc"
