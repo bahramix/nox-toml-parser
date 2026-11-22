@@ -1,3 +1,3 @@
 #!/bin/bash
 
-g++ lexer.cpp examples/lexer_ex.cpp -o examples/lexer
+clang++ lexer.cpp table.cpp value.cpp examples/test.cpp -o examples/test
