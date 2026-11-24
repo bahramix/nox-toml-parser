@@ -7,7 +7,7 @@ namespace nox::toml{
     class parser{
         private:
             table& _table;
-            const std::vector<token>& tokens;
+            std::vector<token>& tokens;
 
             token peek();
             token advance();
@@ -23,7 +23,6 @@ namespace nox::toml{
             const table& table;
 
             parser();
-            
             const nox::toml::table& parse(const std::vector<token>& tokens);
     };
 }
